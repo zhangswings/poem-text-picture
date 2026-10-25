@@ -42,6 +42,7 @@ description: 把一首古诗排成一幅"只由诗中文字组成"的文字山�
 4. 定**一条主轴**（斜线／弧线／月轨／Z 字），所有块沿它走，不许跳
 5. 山水五件：远山（淡小）· 近石（浓大）· 水面（横向颗粒带）· 云雾（含山脚雾化三圈）· 点景（唯一）
 6. 留白 ≥45%：上部=天、中段横向=水雾、下部=雪地
+7. **高密度渲染（B 模式必读）**：形状用几何包含 `inside(x,y)` 判断，不用概率撒点；填实率 ≈95%（字距 0.82×字号、行距 0.80×字号、抖动 ±1.2px、每字转 ±2–8°）；**主字挖空**（填字时跳过主字占位矩形）；山脚/船底用 `foot(x)=base+22·sin(x/170)` 加 30–40px 淡字雾化。详见 `references/advanced-render.md`，可直接改 `examples/gen_dengguanquelou_dense.py`
 
 ### 4. 排出来（纯文字 SVG）
 - 只用 `<text>`：可重复、可 `transform="rotate(a cx cy)"`、可 `opacity`、可 `fill`
@@ -80,6 +81,8 @@ python <skill目录>/scripts/build.py --config poems.json --out 诗词文字画.
 - `references/prompt-v2.md` — 完整提示词 v2.1（可直接复制给任意模型或人）
 - `references/visual-system.md` — 色卡、四级字号、六手法、成体参数表、SVG 片段
 - `references/case-study.md` — 与优秀范例的差距分析（形体／密度／主轴／主字预算／雾化／用色）
-- `examples/gen_jiangxue_silhouette.py` — 字群成体生成器（山形／船体／点径／水带），改参数即可复用
+- `references/advanced-render.md` — 高密度渲染六条工程做法（几何包含、填实率、主字挖空、三层剪影、色族分层、混排）+ 四个坑
+- `examples/gen_dengguanquelou_dense.py` — 高密度生成器（太阳圆／三层山／河道／海／阶梯塔／主字挖空），改参数即可复用
+- `examples/gen_jiangxue_silhouette.py` — 字群成体生成器（山形／船体／点径／水带）
 - `scripts/build.py` — SVG＋推理文字 → 单文件 HTML（可选导 PNG）
 - `assets/template.html` — 教学页版式（Apple 风格，深浅色、打印友好）

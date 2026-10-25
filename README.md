@@ -37,6 +37,14 @@
 |---|---|
 | ![江雪 v2](examples/jiangxue-v2.png) | ![江雪 v3](examples/jiangxue-v3.png) |
 
+### 高密度版：《登鹳雀楼》
+
+![登鹳雀楼](examples/dengguanquelou-v4.png)
+
+太阳是三百个「日／白」排成的圆，山是三层「山」叠出的剪影（远淡近浓、山脚化雾），黄河是有宽度会弯的河道，「楼」沿九级台阶**一级一字**递升。做法见 [`references/advanced-render.md`](references/advanced-render.md)，生成器 [`examples/gen_dengguanquelou_dense.py`](examples/gen_dengguanquelou_dense.py)。
+
+关键三条：**形状用几何包含不用概率撒点**、**填实率 ≈95%**、**主字挖空**（填字时跳过主字矩形，大字周围自然留白）。
+
 「成体」的参数只有三行：
 
 ```python
@@ -63,9 +71,10 @@ SKILL.md                          # 技能入口：执行流程、自检清单�
 references/prompt-v2.md           # 提示词 v2.1（可复制使用）
 references/visual-system.md       # 色卡、四级字号、六手法、成体参数表、SVG 片段
 references/case-study.md          # 与优秀范例的差距分析
+references/advanced-render.md    # 高密度渲染六条工程做法与四个坑
 scripts/build.py                  # SVG＋推理文字 → 单文件教学页 HTML（可选导 PNG）
 assets/template.html              # 教学页版式（Apple 风格，深浅色、打印友好）
-examples/                         # 示例作品与生成器
+examples/                         # 示例作品与生成器（含高密度版《登鹳雀楼》）
 ```
 
 ## 构建教学页
