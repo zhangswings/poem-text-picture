@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<style>
+:root{--bg:#fff;--card:#f5f5f7;--text:#1d1d1f;--text2:#6e6e73;--text3:#86868b;--blue:#0071e3;--hair:rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--text:#f5f5f7;--text2:#a1a1a6;--text3:#8e8e93;--blue:#2997ff;--hair:rgba(255,255,255,.12)}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC",sans-serif;background:var(--bg);color:var(--text);font-size:15.5px;line-height:1.72;-webkit-font-smoothing:antialiased}
+nav{position:fixed;inset:0 0 auto 0;height:48px;z-index:100;background:rgba(255,255,255,.72);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--hair);display:flex;align-items:center;justify-content:center;gap:20px;font-size:12.5px;color:var(--text2)}
+@media (prefers-color-scheme:dark){nav{background:rgba(0,0,0,.65)}}
+nav a{color:var(--text2);text-decoration:none}nav a:hover{color:var(--text)}
+#progress{position:fixed;top:46px;left:0;height:2px;background:var(--blue);width:0;z-index:101}
+main{max-width:900px;margin:0 auto;padding:0 22px 90px}
+.hero{margin-top:76px;border-radius:28px;padding:64px 48px 56px;color:#fff;background:#0b0b0f;
+  background-image:radial-gradient(120% 90% at 15% 0%,rgba(0,113,227,.45),transparent 55%),radial-gradient(90% 80% at 90% 100%,rgba(255,159,10,.22),transparent 60%);
+  position:relative;overflow:hidden}
+.hero .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:14px}
+.hero h1{font-size:clamp(32px,5.4vw,54px);line-height:1.07;letter-spacing:-.03em;font-weight:700;text-wrap:balance}
+.hero .sub{margin-top:18px;font-size:16px;color:rgba(255,255,255,.72);max-width:34em}
+.hero .meta{margin-top:26px;font-size:12.5px;color:rgba(255,255,255,.45)}
+section{margin-top:72px}
+.poem-head .kicker{font-size:11px;letter-spacing:.2em;color:var(--blue);text-transform:uppercase;font-weight:600}
+.poem-head h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.02em;line-height:1.1;margin-top:6px;font-weight:700}
+.poem-head .fulltext{margin-top:10px;font-size:15px;color:var(--text2);font-family:"Kaiti SC","STKaiti","KaiTi",serif}
+.block{background:var(--card);border-radius:24px;box-shadow:inset 0 0 0 1px var(--hair);padding:28px 30px;margin-top:18px}
+.block>.label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:12px}
+ul.facts{list-style:none}
+ul.facts li{padding:7px 0;border-bottom:1px solid var(--hair);font-size:14.5px}
+ul.facts li:last-child{border-bottom:none}
+table.proj{width:100%;border-collapse:collapse;font-size:14px}
+table.proj th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);font-weight:600;padding:8px 10px;border-bottom:1px solid var(--hair)}
+table.proj td{padding:9px 10px;border-bottom:1px solid var(--hair);vertical-align:top}
+table.proj tr:last-child td{border-bottom:none}
+table.proj td:first-child{font-weight:600;white-space:nowrap}
+table.proj td:nth-child(2){font-family:"Kaiti SC","STKaiti","KaiTi",serif;color:var(--blue)}
+.artwork{background:var(--bg);border-radius:20px;padding:14px;box-shadow:inset 0 0 0 1px var(--hair);margin-top:14px}
+.artwork svg{width:100%;height:auto;display:block;border-radius:12px;box-shadow:inset 0 0 0 1px var(--hair)}
+.path{margin-top:14px;font-size:14px;color:var(--text2)}
+.path b{color:var(--text)}
+ol.checks{list-style:none;counter-reset:c}
+ol.checks li{counter-increment:c;display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--hair);font-size:14.5px;align-items:flex-start}
+ol.checks li:last-child{border-bottom:none}
+ol.checks li::before{content:"✓";color:#1d7a3d;font-weight:700;flex:none}
+@media (prefers-color-scheme:dark){ol.checks li::before{color:#30d158}}
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:opacity .4s ease}html{scroll-behavior:auto}}
+@media (prefers-contrast:more){.block,.artwork{box-shadow:inset 0 0 0 1.5px var(--text)}}
+@media print{nav,#progress{display:none}.hero{margin-top:0}.js .reveal{opacity:1!important;transform:none!important}section{page-break-before:always}section:first-of-type{page-break-before:avoid}}
+.foot{margin-top:80px;text-align:center;font-size:12.5px;color:var(--text3)}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<nav>{{NAV}}</nav>
+<div id="progress"></div>
+<main>
+<header class="hero reveal">
+  <div class="kicker">{{KICKER}}</div>
+  <h1>{{TITLE}}</h1>
+  <p class="sub">{{SUBTITLE}}</p>
+  <div class="meta">{{META}}</div>
+</header>
+{{NOTES}}
+{{SECTIONS}}
+<div class="foot">字的位置和走向，就是画面本身。</div>
+</main>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.08});
+els.forEach(function(e){io.observe(e)});
+var bar=document.getElementById('progress'),tk=false;
+window.addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';tk=false})},{passive:true});})();
+</script>
+</body>
+</html>

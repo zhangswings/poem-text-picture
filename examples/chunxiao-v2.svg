@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1280" viewBox="0 0 900 1280" font-family="'Kaiti SC','STKaiti','KaiTi',serif" fill="#1d1d1f">
+  <rect width="900" height="1280" fill="#fffdf9"/>
+  <!-- 底晕：一个极淡的「春」作水墨底 -->
+  <text x="-50" y="1250" font-size="440" fill="#5f7a3f" opacity="0.038">春</text>
+
+  <!-- 春眠：主字 + 苔绿回声簇 -->
+  <g fill="#5f7a3f">
+    <text x="58" y="142" font-size="26" opacity="0.85">春眠</text>
+    <text x="118" y="106" font-size="32" opacity="0.9">春眠</text>
+    <text x="190" y="96" font-size="26" opacity="0.75">春眠</text>
+    <text x="258" y="128" font-size="30" opacity="0.8">春眠</text>
+    <text x="58" y="216" font-size="22" opacity="0.6">春眠</text>
+    <text x="150" y="176" font-size="24" opacity="0.7">春眠</text>
+    <text x="300" y="176" font-size="22" opacity="0.55">春眠</text>
+    <text x="110" y="286" font-size="20" opacity="0.5">春眠</text>
+    <text x="220" y="272" font-size="18" opacity="0.45">春眠</text>
+    <text x="156" y="80" font-size="20" opacity="0.5">春</text>
+  </g>
+  <text x="104" y="252" font-size="142">春</text>
+  <text x="244" y="356" font-size="120" transform="rotate(-8 244 356)">眠</text>
+
+  <!-- 不觉晓 -->
+  <text x="366" y="322" font-size="64">不</text>
+  <text x="436" y="344" font-size="64">觉</text>
+  <text x="510" y="322" font-size="64">晓</text>
+
+  <!-- 处处闻啼鸟：沿右上方向升起的字形 -->
+  <text x="572" y="288" font-size="52">处</text>
+  <text x="620" y="316" font-size="48">处</text>
+  <text x="670" y="274" font-size="52">闻</text>
+  <text x="720" y="234" font-size="54">啼</text>
+  <text x="788" y="192" font-size="74">鸟</text>
+
+  <!-- 啼鸟群：洋红成阵，V 形雁阵 -->
+  <g fill="#d2367a">
+    <text x="598" y="142" font-size="26" opacity="0.85">啼鸟</text>
+    <text x="626" y="118" font-size="22" opacity="0.7">啼鸟</text>
+    <text x="652" y="140" font-size="19" opacity="0.55">鸟</text>
+    <text x="740" y="94" font-size="24" opacity="0.8">啼鸟</text>
+    <text x="766" y="72" font-size="20" opacity="0.65">啼鸟</text>
+    <text x="790" y="94" font-size="18" opacity="0.5">鸟</text>
+    <text x="848" y="216" font-size="22" opacity="0.6">啼鸟</text>
+    <text x="872" y="196" font-size="18" opacity="0.45">鸟</text>
+    <text x="502" y="216" font-size="22" opacity="0.55">啼鸟</text>
+    <text x="526" y="196" font-size="18" opacity="0.4">鸟</text>
+    <text x="648" y="446" font-size="24" opacity="0.6">啼鸟</text>
+    <text x="676" y="424" font-size="20" opacity="0.5">啼鸟</text>
+    <text x="700" y="446" font-size="17" opacity="0.4">鸟</text>
+    <text x="794" y="376" font-size="22" opacity="0.5">啼鸟</text>
+    <text x="818" y="358" font-size="17" opacity="0.4">鸟</text>
+    <text x="534" y="488" font-size="20" opacity="0.45">啼鸟</text>
+    <text x="558" y="470" font-size="16" opacity="0.35">鸟</text>
+  </g>
+
+  <!-- 夜来 -->
+  <text x="276" y="546" font-size="74">夜</text>
+  <text x="362" y="590" font-size="66">来</text>
+
+  <!-- 风雨声：灰蓝斜带，越下越淡 -->
+  <g fill="#93a7b8">
+    <text x="338" y="472" font-size="22" opacity="0.5" transform="rotate(-34 338 472)">风雨声</text>
+    <text x="388" y="514" font-size="21" opacity="0.45" transform="rotate(-34 388 514)">风雨声</text>
+    <text x="438" y="556" font-size="20" opacity="0.4" transform="rotate(-34 438 556)">风雨声</text>
+    <text x="488" y="598" font-size="19" opacity="0.35" transform="rotate(-34 488 598)">风雨声</text>
+    <text x="538" y="640" font-size="18" opacity="0.3" transform="rotate(-34 538 640)">风雨声</text>
+    <text x="556" y="542" font-size="20" opacity="0.35" transform="rotate(-34 556 542)">风雨声</text>
+    <text x="604" y="584" font-size="19" opacity="0.3" transform="rotate(-34 604 584)">风雨声</text>
+    <text x="652" y="626" font-size="18" opacity="0.25" transform="rotate(-34 652 626)">风雨声</text>
+    <text x="700" y="668" font-size="17" opacity="0.22" transform="rotate(-34 700 668)">风雨声</text>
+    <text x="418" y="702" font-size="16" opacity="0.25" transform="rotate(-34 418 702)">风</text>
+    <text x="596" y="702" font-size="16" opacity="0.22" transform="rotate(-34 596 702)">声</text>
+  </g>
+
+  <!-- 花落：主字 + 胭脂花堆（成块、成坠） -->
+  <g fill="#d98a9e">
+    <text x="126" y="614" font-size="30" opacity="0.8" transform="rotate(-20 126 614)">花落</text>
+    <text x="88" y="668" font-size="26" opacity="0.7" transform="rotate(25 88 668)">花落</text>
+    <text x="172" y="702" font-size="24" opacity="0.65" transform="rotate(10 172 702)">花</text>
+    <text x="116" y="738" font-size="22" opacity="0.6" transform="rotate(-35 116 738)">花落</text>
+    <text x="198" y="782" font-size="24" opacity="0.6" transform="rotate(15 198 782)">花</text>
+    <text x="146" y="818" font-size="20" opacity="0.5" transform="rotate(-10 146 818)">花落</text>
+    <text x="228" y="832" font-size="22" opacity="0.55" transform="rotate(30 228 832)">花</text>
+    <text x="100" y="862" font-size="18" opacity="0.45" transform="rotate(-25 100 862)">花</text>
+    <text x="182" y="882" font-size="20" opacity="0.5" transform="rotate(18 182 882)">花落</text>
+    <text x="258" y="872" font-size="18" opacity="0.45" transform="rotate(-15 258 872)">花</text>
+    <text x="306" y="908" font-size="20" opacity="0.5" transform="rotate(22 306 908)">花</text>
+    <text x="138" y="918" font-size="16" opacity="0.4" transform="rotate(-30 138 918)">花</text>
+    <text x="238" y="944" font-size="18" opacity="0.45" transform="rotate(12 238 944)">花落</text>
+    <text x="414" y="972" font-size="20" opacity="0.5" transform="rotate(20 414 972)">花</text>
+    <text x="494" y="1082" font-size="18" opacity="0.4" transform="rotate(-18 494 1082)">花落</text>
+    <text x="700" y="1122" font-size="16" opacity="0.4" transform="rotate(24 700 1122)">花</text>
+    <text x="150" y="600" font-size="22" opacity="0.6" transform="rotate(32 150 600)">花</text>
+    <text x="98" y="638" font-size="18" opacity="0.5" transform="rotate(-18 98 638)">花落</text>
+    <text x="206" y="656" font-size="20" opacity="0.55" transform="rotate(-28 206 656)">花</text>
+    <text x="118" y="694" font-size="18" opacity="0.5" transform="rotate(8 118 694)">花</text>
+    <text x="162" y="748" font-size="16" opacity="0.45" transform="rotate(40 162 748)">花</text>
+    <text x="248" y="806" font-size="18" opacity="0.5" transform="rotate(-22 248 806)">花落</text>
+  </g>
+  <text x="164" y="664" font-size="86" transform="rotate(12 164 664)">花</text>
+  <text x="272" y="748" font-size="82" transform="rotate(18 272 748)">落</text>
+
+  <!-- 知多少：一问散在花与空白之间 -->
+  <g fill="#1d1d1f">
+    <text x="556" y="906" font-size="74">知</text>
+    <text x="636" y="952" font-size="72">多</text>
+    <text x="716" y="998" font-size="72">少</text>
+  </g>
+  <g fill="#6e6e73">
+    <text x="464" y="1002" font-size="22" opacity="0.6">知多少</text>
+    <text x="536" y="1046" font-size="20" opacity="0.55">知多少</text>
+    <text x="616" y="1012" font-size="22" opacity="0.6">知多少</text>
+    <text x="696" y="1076" font-size="20" opacity="0.5">知多少</text>
+    <text x="766" y="1032" font-size="22" opacity="0.55">知多少</text>
+    <text x="812" y="960" font-size="18" opacity="0.45">知多少</text>
+    <text x="818" y="1064" font-size="16" opacity="0.42">知多少</text>
+    <text x="636" y="1132" font-size="20" opacity="0.5">知多少</text>
+    <text x="556" y="1162" font-size="18" opacity="0.45">知多少</text>
+    <text x="726" y="1152" font-size="18" opacity="0.45">知多少</text>
+    <text x="796" y="1196" font-size="16" opacity="0.4">知多少</text>
+    <text x="446" y="932" font-size="18" opacity="0.45">知多少</text>
+  </g>
+</svg>
